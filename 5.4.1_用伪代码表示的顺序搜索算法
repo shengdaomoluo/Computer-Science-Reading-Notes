@@ -1,0 +1,11 @@
+def Search(List, TargetValue):
+    if (List为空):
+        声明搜索失败
+    else:
+        选择List中的第一个条目作为TestEntry
+        while (TargetValue大于TestEntry and 还有条目):
+            选择List中的下一个条目作为TestEntry
+        if (TargetValue = TestEntry):
+            声明搜索成功
+        else:
+            声明搜索失败
