@@ -1,0 +1,14 @@
+List = ["Alice", "Bob", "Carol", "David", "Elaine", "Fred", "George", "Harry", "Irene", "John", "Kelly", "Larry", "Mary", "Nancy", "Oliver"]
+def Search(List, TargetValue):
+    if (List为空):
+        报告搜索失败
+    else:
+        TestEntry = List的中间条目
+        if (TargetValue == TestEntry):
+            报告搜索成功
+        if (TargetValue < TestEntry):
+            Sublist = TestEntry前面的List部分
+            Search(Sublist, TargetValue)
+        if (TargetValue > TestEntry):
+            Sublist = TestEntry后面的List部分
+            Search(Sublist, TargetValue)
